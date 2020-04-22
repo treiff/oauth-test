@@ -9,6 +9,6 @@ class OauthsController < ApplicationController
   private
 
   def token_url
-      "#{ENV['TOKEN_URL']}?client_id=#{ENV['APPLICATION_ID']}&client_secret=#{ENV['APPLICATION_SECRET']}&code=#{params['code']}&grant_type=authorization_code&redirect_uri=#{CGI.escape(ENV['CALLBACK_URL'])}"
+    "#{ENV['TOKEN_URL']}?client_id=#{ENV['APPLICATION_ID']}&client_secret=#{ENV['APPLICATION_SECRET']}&code=#{params['code']}&grant_type=authorization_code&redirect_uri=#{CGI.escape(ENV['CALLBACK_URL'])}"
   end
 end

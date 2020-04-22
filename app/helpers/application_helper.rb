@@ -2,6 +2,10 @@ module ApplicationHelper
   def authorization_url
     "#{ENV['AUTH_URL']}?client_id=#{ENV['APPLICATION_ID']}&redirect_uri=#{CGI.escape(ENV['CALLBACK_URL'])}&response_type=code&scope=login+data"
   end
+
+  def refresh_url
+    "#{ENV['TOKEN_URL']}?client_id=#{ENV['APPLICATION_ID']}&client_secret=#{ENV['APPLICATION_SECRET']}&refresh_token=123&grant_type=refresh_token&redirect_uri=#{CGI.escape(ENV['CALLBACK_URL'])}"
+  end
 end
 
 # APPLICATION_ID:           745a580b5a9bef0606875874a3e51757b38dde7279f1c89e6a4acf14394dfaaf
