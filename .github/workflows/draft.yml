@@ -1,0 +1,16 @@
+name: Draft PR Closer
+on:
+  pull_request_review_comment:
+    types: [created]
+
+jobs:
+  draft_pr_close:
+    runs-on: ubuntu-latest
+    name: Draft PR Closer
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Get PR Status
+      uses: treiff/draft-pr-closer@v1
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
