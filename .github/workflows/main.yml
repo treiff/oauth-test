@@ -13,7 +13,7 @@ jobs:
       name: Checkout
     - name: Hello world action step
       id: hello
-      uses: treiff/team-approvals-action@v1
+      uses: treiff/team-approvals-action@v1.0
       with:
         who-to-greet: 'blah blah'
     # Use the output from the `hello` step
