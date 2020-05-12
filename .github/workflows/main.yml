@@ -1,6 +1,8 @@
 name: Team Approval Action
 
-on: [push]
+on:
+  schedule:
+  - cron: "15 * * * *"
 
 jobs:
   team_approval_job:
