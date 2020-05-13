@@ -13,3 +13,4 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         days-before-close: 2
+        closing-comment: This is too old going to close
