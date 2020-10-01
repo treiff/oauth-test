@@ -3,7 +3,6 @@ class OauthsController < ApplicationController
 
   def callback
     resp = HTTParty.post token_url
-    p resp
     render json: resp
   end
 
