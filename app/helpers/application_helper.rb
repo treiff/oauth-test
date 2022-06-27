@@ -12,7 +12,6 @@ end
 # APPLICATION_SECRET:       ueQD5xJ_DUcXlOHLshTNDh-f18pLF8ZxGtfgXVK0MEU
 # AUTH_URL:                 https://app.crmworkspaceqa.com/oauth/authorize
 # CALLBACK_URL:             https://oauth-test-wb.herokuapp.com/auth/callback
-# DATABASE_URL:             postgres://kajebgwapoktml:2f05ea5997177fa9c437d3e9bf5f1f78bc4bf7316896a9804657c6c8c83ab0c1@ec2-52-55-59-250.compute-1.amazonaws.com:5432/da1np1fsc1erol
 # LANG:                     en_US.UTF-8
 # RACK_ENV:                 production
 # RAILS_ENV:                production
